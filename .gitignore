@@ -1,10 +1,6 @@
 # 依赖
 recording/node_modules/
 
-# 密钥（务必不要提交）
-recording/.env
-.env
-
 # 后端运行时数据（录音文件 + 拜访记录）
 recording/data/
 
