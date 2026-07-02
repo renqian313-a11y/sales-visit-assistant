@@ -1,0 +1,16 @@
+# 依赖
+recording/node_modules/
+
+# 密钥（务必不要提交）
+recording/.env
+.env
+
+# 后端运行时数据（录音文件 + 拜访记录）
+recording/data/
+
+# 声纹模型（体积大，按需下载，不入库）
+recording/models/
+
+# 系统 / 日志
+.DS_Store
+*.log
