@@ -192,8 +192,8 @@ body{
 .rec-meta .row svg{flex:0 0 13px;}
 
 /* tabs */
-.tabs{display:flex;background:var(--card);padding:0 20px;position:sticky;top:0;z-index:6;border-bottom:1px solid var(--line);}
-.tab{padding:13px 2px;margin-right:28px;font-size:15px;color:var(--text-3);font-weight:600;position:relative;cursor:pointer;transition:.18s;}
+.tabs{display:flex;background:var(--card);padding:0 20px;position:sticky;top:0;z-index:6;}
+.tab{padding:13px 2px;margin-right:28px;font-size:15px;color:var(--text-3);font-weight:500;position:relative;cursor:pointer;transition:.18s;}
 .tab.on{color:var(--text);}
 .tab:hover{color:var(--text-2);}
 .tab .nd{position:absolute;top:11px;right:-9px;width:7px;height:7px;border-radius:50%;background:var(--red);display:none;box-shadow:0 0 0 2px #fff;}
@@ -253,12 +253,12 @@ body{
 
 /* ===== 商家信息 tab ===== */
 #merchantPane{padding:16px 18px 24px;overflow-y:auto;}
-.mi-sec{margin-bottom:22px;}
+.mi-sec{margin-bottom:36px;}
 .mi-sec:last-child{margin-bottom:8px;}
-.mi-title{font-size:16px;font-weight:700;color:var(--text);margin-bottom:12px;letter-spacing:.2px;}
+.mi-title{font-size:16px;font-weight:500;color:var(--text);margin-bottom:12px;letter-spacing:.2px;}
 .mi-kv{display:flex;align-items:center;font-size:14px;margin-bottom:10px;}
-.mi-kv .k{color:var(--text-2);flex:0 0 auto;margin-right:14px;}
-.mi-kv .v{color:var(--text);font-weight:600;}
+.mi-kv .k{color:var(--text-3);flex:0 0 auto;margin-right:14px;}
+.mi-kv .v{color:var(--text);font-weight:400;}
 .mi-tag{display:inline-flex;align-items:center;font-size:11px;font-weight:600;padding:1px 8px;border-radius:9px;margin-left:8px;}
 .mi-tag.good{background:#fdf0e6;color:var(--orange);}
 .mi-tag.blue{background:var(--primary-dim);color:var(--primary);}
@@ -267,7 +267,7 @@ body{
 .mi-subtabs .st{color:var(--text-3);cursor:pointer;font-weight:600;}
 .mi-subtabs .st.on{color:var(--text);}
 .mi-actcard{background:var(--bg);border-radius:14px;padding:14px;margin-bottom:12px;}
-.mi-actcard .ah{display:flex;align-items:center;font-size:14px;font-weight:700;color:var(--text);margin-bottom:12px;}
+.mi-actcard .ah{display:flex;align-items:center;font-size:14px;font-weight:500;color:var(--text);margin-bottom:12px;}
 .mi-actcard .ah .badge{font-size:10px;font-weight:600;padding:1px 7px;border-radius:7px;margin-right:8px;}
 .mi-actcard .ah .badge.store{background:var(--primary-dim);color:var(--primary);}
 .mi-actcard .ah .badge.hq{background:#ece7fd;color:#7c5cff;}
@@ -278,19 +278,19 @@ body{
 .mi-stats{display:flex;gap:10px;margin-top:12px;}
 .mi-stats .s{flex:1;text-align:center;}
 .mi-stats .s .sl{font-size:11px;color:var(--text-3);margin-bottom:4px;}
-.mi-stats .s .sv{font-size:15px;font-weight:700;color:var(--text);}
+.mi-stats .s .sv{font-size:15px;font-weight:600;color:var(--text);}
 .mi-stats .s .sv em{font-size:11px;font-style:normal;font-weight:600;margin-left:1px;}
 /* 扫码数据 2x2 */
-.mi-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+.mi-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
 .mi-gcard{background:var(--bg);border-radius:14px;padding:14px 12px;text-align:center;}
 .mi-gcard .gl{font-size:12px;color:var(--text-3);margin-bottom:8px;}
-.mi-gcard .gv{font-size:19px;font-weight:700;color:var(--text);}
+.mi-gcard .gv{font-size:19px;font-weight:600;color:var(--text);}
 .mi-gcard .gv em{font-size:12px;font-style:normal;font-weight:600;margin-left:1px;}
 .mi-gcard .gd{font-size:11px;color:var(--green);margin-top:6px;}
 /* 产品覆盖 */
-.mi-prod{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;}
+.mi-prod{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;}
 .mi-pcard{background:var(--bg);border-radius:12px;padding:12px 4px;text-align:center;}
-.mi-pcard .pn{font-size:13px;font-weight:600;color:var(--text);margin-bottom:5px;}
+.mi-pcard .pn{font-size:13px;font-weight:500;color:var(--text);margin-bottom:5px;}
 .mi-pcard .ps{font-size:11px;color:var(--text-3);}
 .mi-pcard.used .pn{color:var(--green);}
 .mi-pcard.used{background:var(--green-card);}
@@ -298,8 +298,8 @@ body{
 .mi-pcard.todo .ps{color:var(--primary);}
 
 /* ===== 任务跟进 (录音中也可填) ===== */
-#taskPane{padding:14px 18px 16px;overflow-y:auto;}
-.task-submit-bar{position:sticky;bottom:0;left:0;right:0;margin:8px -18px 0;padding:12px 18px calc(12px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(255,255,255,0),var(--card) 30%);border-top:1px solid var(--line);z-index:5;}
+#taskPane{padding:14px 18px 0;overflow-y:auto;}
+.task-submit-bar{position:sticky;bottom:0;left:0;right:0;margin:8px -18px 0;padding:12px 18px calc(12px + env(safe-area-inset-bottom));background:var(--card);border-top:1px solid var(--line);z-index:5;}
 .task-submit-bar .btn{width:100%;}
 .form-tip{background:linear-gradient(95deg,#eef4ff,#f4eeff);border:1px solid var(--ai-line);border-radius:12px;padding:11px 13px;font-size:12.5px;color:#2456c5;margin-bottom:16px;display:flex;gap:8px;align-items:flex-start;line-height:1.55;}
 .form-tip span:first-child{font-size:15px;flex:0 0 auto;}
@@ -339,8 +339,9 @@ textarea.ctrl{resize:none;min-height:64px;}
 .ms-head .close{margin-left:auto;font-size:24px;color:var(--text-3);cursor:pointer;line-height:1;}
 .ms-body{flex:1;overflow-y:auto;padding:4px 16px 24px;}
 .ms-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:15px;margin-bottom:14px;box-shadow:var(--shadow);}
+#dtSummary .ms-card,#doneSummary .ms-card{box-shadow:none;margin-bottom:0;}
 .ms-card .ct{font-size:16px;font-weight:700;}
-.ms-card .cd{font-size:12.5px;color:var(--text-2);margin-top:6px;line-height:1.5;}
+.ms-card .cd{font-size:12.5px;color:var(--text-2);margin-top:6px;line-height:1.6;}
 .grp-title{font-size:13.5px;font-weight:700;margin:16px 0 10px;display:flex;align-items:center;gap:6px;color:var(--text);}
 .grp-title.blue,.grp-title.red,.grp-title.green{color:var(--text);}
 .grp-title.blue .plus{color:var(--primary);}
@@ -389,7 +390,7 @@ textarea.ctrl{resize:none;min-height:64px;}
 .seg div.on{background:#fff;color:var(--text);box-shadow:0 2px 6px rgba(0,0,0,.08);}
 .done-pane{display:none;}
 .done-pane.on{display:block;}
-.sec-label{font-size:13px;font-weight:700;color:var(--text-2);margin:20px 0 10px;letter-spacing:.3px;display:flex;align-items:center;gap:6px;}
+.sec-label{font-size:13px;font-weight:700;color:var(--text-2);margin:24px 0 10px;letter-spacing:.3px;display:flex;align-items:center;gap:6px;}
 .sec-label::before{content:"";width:3px;height:12px;background:var(--primary);border-radius:2px;}
 
 /* toast/overlay/modal */
@@ -438,7 +439,7 @@ textarea.ctrl{resize:none;min-height:64px;}
 .sheet-grab{flex:0 0 auto;height:26px;display:flex;align-items:center;justify-content:center;cursor:grab;touch-action:none;}
 .sheet-grab i{width:38px;height:5px;border-radius:3px;background:#d8dbe0;}
 .sheet-head{flex:0 0 auto;display:flex;align-items:center;padding:2px 16px 12px;}
-.sheet-head .st{flex:1;text-align:center;font-size:17px;font-weight:700;}
+.sheet-head .st{flex:1;text-align:center;font-size:17px;font-weight:700;padding-left:30px;}
 .sheet-head .sx{width:30px;text-align:right;font-size:22px;color:var(--text-3);cursor:pointer;line-height:1;}
 .sheet-body{flex:1;overflow-y:auto;display:flex;flex-direction:column;min-height:0;}
 /* 录音浮层: 全屏覆盖(区别于选商户的半浮层) */
@@ -463,7 +464,7 @@ textarea.ctrl{resize:none;min-height:64px;}
 .mini-rec .mpause:hover{background:rgba(255,255,255,.2);}
 
 /* ===== 能力建设中 ===== */
-.building{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:0 40px;text-align:center;background:var(--bg);}
+.building{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:216px 40px 0;text-align:center;background:var(--bg);}
 .building .ico{width:96px;height:96px;border-radius:28px;background:var(--primary-dim);display:flex;align-items:center;justify-content:center;font-size:46px;margin-bottom:22px;}
 .building h2{font-size:19px;font-weight:700;}
 .building p{font-size:14px;color:var(--text-2);margin-top:10px;line-height:1.6;}
@@ -482,6 +483,7 @@ textarea.ctrl{resize:none;min-height:64px;}
 .done-hero .dt{font-size:22px;font-weight:800;}
 .done-hero .dm{font-size:12.5px;color:var(--text-2);margin-top:8px;display:flex;flex-wrap:wrap;gap:12px;}
 .done-hero .dm span{display:flex;align-items:center;gap:5px;}
+.done-hero .dm i{font-style:normal;}
 .done-status{display:inline-flex;align-items:center;gap:5px;background:var(--green-card);color:var(--green-c);font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-top:12px;border:1px solid #c8eed6;}
 </style>
 </head>
@@ -496,7 +498,7 @@ textarea.ctrl{resize:none;min-height:64px;}
   <div class="screen active" id="s-home">
     <div class="brand">
       <div class="logo"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3" stroke="#fff" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg></div>
-      <div><div class="bt">拜访助手</div><div class="bs">VISIT ASSISTANT · AI</div></div>
+      <div><div class="bt">拜访助手</div></div>
       <div class="who" title="我">我</div>
     </div>
     <div class="quick">
@@ -535,7 +537,7 @@ textarea.ctrl{resize:none;min-height:64px;}
     <div class="building">
       <div class="ico">🛠️</div>
       <h2>能力正在建设中</h2>
-      <p>该功能正在开发中，敬请期待。<br>如有需求可联系产品团队优先排期。</p>
+      <p>该功能正在开发中，敬请期待</p>
     </div>
   </div>
 
@@ -727,7 +729,7 @@ textarea.ctrl{resize:none;min-height:64px;}
       <div class="mode-pick">
         <div class="mode-opt sel" id="mode-real" onclick="pickMode('real')">
           <div class="mo-t">🎙️ 真实录音转写</div>
-          <div class="mo-d">本地 Whisper 模型，首次需联网下载约 80MB，之后离线可用。</div>
+          <div class="mo-d">实时转写，抽取关键信息</div>
         </div>
         <div class="mode-opt" id="mode-demo" onclick="pickMode('demo')">
           <div class="mo-t">▶️ 演示模式</div>
@@ -968,8 +970,8 @@ function openDetail(id){
   if(!d.summary||!d.summary.length){
     ds.innerHTML='<div class="empty-tip" style="margin-top:14px;"><span class="ei">✨</span>本次拜访未生成 AI 纪要<br>可在录音过程中提炼更多商家信息</div>';
   } else {
-    d.summary.forEach(s=>{
-      const c=document.createElement('div');c.className='ms-card';c.style.marginTop='14px';
+    d.summary.forEach((s,i)=>{
+      const c=document.createElement('div');c.className='ms-card';c.style.marginTop=(i===0?6:12)+'px';
       c.innerHTML=`<div class="ct" style="font-size:14px;display:flex;align-items:center;gap:7px;"><span style="width:24px;height:24px;border-radius:8px;background:${icoMap[s.type][1]};display:inline-flex;align-items:center;justify-content:center;">${icoMap[s.type][0]}</span>${s.title}</div>`+
         '<div class="cd">'+s.items.map(it=>'· '+it).join('<br>')+'</div>';
       ds.appendChild(c);
@@ -1376,7 +1378,7 @@ function buildMerchantInfo(){
 }
 function actCard(type,tag,name){
   return `<div class="mi-actcard">
-    <div class="ah"><span class="badge ${type}">${tag}</span>${name}<span class="arr">›</span></div>
+    <div class="ah"><span class="badge ${type}">${tag}</span>${name}</div>
     <div class="mi-actrow"><span class="k">用户补贴</span><span class="v">下单立减，最高可减 12 元/单</span></div>
     <div class="mi-actrow"><span class="k">店员分佣</span><span class="v">每个冲单周期内最高获得 600 元激励</span></div>
     <div class="mi-stats">
@@ -1467,7 +1469,7 @@ function buildTaskForm(targetId){
   const sec1=document.createElement('div');sec1.className='task-sec';sec1.innerHTML='<span class="bar"></span>物料铺设 / 活动';f.appendChild(sec1);
   const segWrap=document.createElement('div');f.appendChild(segWrap);
   SEG_FIELDS.forEach(fld=>renderSeg(segWrap,fld,targetId));
-  const sec2=document.createElement('div');sec2.className='task-sec';sec2.innerHTML='<span class="bar"></span>商家信息';f.appendChild(sec2);
+  const sec2=document.createElement('div');sec2.className='task-sec';sec2.style.marginTop='24px';sec2.innerHTML='<span class="bar"></span>商家信息';f.appendChild(sec2);
   const txtWrap=document.createElement('div');f.appendChild(txtWrap);
   TEXT_FIELDS.forEach(fld=>renderText(txtWrap,fld,targetId));
   const note=document.createElement('div');note.className='field';
@@ -1559,8 +1561,8 @@ function buildDone(){
   const ds=document.getElementById('doneSummary');ds.innerHTML='';
   const icoMap={info:['🏪','var(--blue-card)'],mat:['📦','var(--green-card)'],todo:['📝','#fdf2e6']};
   if(collectedSummary.length===0)ds.innerHTML='<div style="text-align:center;color:var(--text-3);padding:30px;">暂无提炼内容</div>';
-  collectedSummary.forEach(s=>{
-    const c=document.createElement('div');c.className='ms-card';c.style.marginTop='14px';
+  collectedSummary.forEach((s,i)=>{
+    const c=document.createElement('div');c.className='ms-card';c.style.marginTop=(i===0?6:12)+'px';
     c.innerHTML=`<div class="ct" style="font-size:14px;display:flex;align-items:center;gap:7px;"><span style="width:24px;height:24px;border-radius:8px;background:${icoMap[s.type][1]};display:inline-flex;align-items:center;justify-content:center;">${icoMap[s.type][0]}</span>${s.title}</div>`+
       '<div class="cd">'+s.items.map(it=>'· '+it).join('<br>')+'</div>';
     ds.appendChild(c);
